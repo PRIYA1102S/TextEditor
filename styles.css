@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/0a082424fb5a0ef46bd115d7abce30ab.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: black;
+}
+
+.editor-container {
+    background-color: rgba(12, 12, 12, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    color: #196b80;
+}
+
+h1 {
+    text-align: center;
+    color: #258da7;
+    margin-bottom: 20px;
+}
+
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.toolbar select,
+.toolbar input[type="color"],
+.toolbar button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    background: linear-gradient(145deg, rgb(6, 6, 6), #1287a4);
+    color: white;
+    font-weight: bold;
+}
+
+.toolbar select {
+    border: 1px solid #ccc;
+    background: white;
+    color: #333;
+}
+
+.toolbar input[type="color"] {
+    border: 1px solid #ccc;
+    padding: 8px;
+    background: white;
+}
+
+.toolbar button:hover {
+    background: linear-gradient(145deg, rgb(6, 6, 6), #10728b);
+    transform: scale(1.05);
+}
+
+.toolbar button:active {
+    background: linear-gradient(145deg, rgb(6, 6, 6), #198daa);
+    transform: scale(0.95);
+}
+
+.text-area {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 300px;
+    font-size: 16px;
+    line-height: 1.5;
+    outline: none;
+    background-color: #fff;
+}
+
+.text-area:focus {
+    border-color: rgb(6, 6, 6), #196b80;
+    box-shadow: 0 0 5px rgba(11, 122, 150, 0.5);
+}
